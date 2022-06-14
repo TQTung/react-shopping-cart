@@ -1,0 +1,66 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container {
+    min-width: 300px;
+    min-height: 400px;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: 0.3s linear;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+.shoes-img {
+    --width-height: 300px;
+    width: var(--width-height);
+    height: var(--width-height);
+    display: block;
+    object-fit: cover;
+}
+.shoes-title {
+    margin: 10px 0;
+    text-transform: uppercase;
+
+    & a {
+        text-decoration: none;
+        color: var(--title-color);
+    }
+    & a:hover {
+        color: var(--color-hover);
+        transition: all 0.4s linear;
+    }
+}
+.price {
+    color: var(--crimson-color);
+    font-weight: 600;
+}
+.des {
+    margin: 10px 0;
+    color: var(--text-color);
+}
+.btn {
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--crimson-color);
+    border-radius: 2px;
+    letter-spacing: 1px;
+
+    &:hover {
+        opacity: 0.93;
+    }
+}
